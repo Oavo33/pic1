@@ -568,7 +568,7 @@
     var leftCircle = document.getElementById("left-circle");
     var triangle = document.getElementById("triangle");
     function moveShapes() {
-      centerCircle.style.transform = "translate(-50%, -50%) translateX(2px) translateY(5px)";
+      centerCircle.style.transform = "translate(-50%, -50%) translateX(1px) translateY(5px)";
       leftCircle.style.transform = "translate(-50%, -50%) translateX(12px) translateY(-45px)";
       triangle.style.transform = "translate(-50%, -50%) translateX(30px) translateY(25px)rotate(180deg)";
 // Redirect to the specified page after the animation completes

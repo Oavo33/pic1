@@ -18,7 +18,9 @@
       padding: 40px 20px;
       text-align: center;
       position: relative;
-    }
+    }header .hub-title {
+  font-size: 40px; 
+}
     header h1 {
       font-size: 65px;
       color: #ffffff;
@@ -375,17 +377,19 @@
 <body>
 <header>
   <div class="graffiti">
-        This is your Hub !<br>
-        Do you want to change It ?<br>
-        Submit Request <br>
-        <span class="box"><a href="https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true" target="_blank">Here</a></span>
-    </div>
-  <div class="login">
-  <a href="#">Login</a><div class="tooltip">
-    You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
+    This is your Hub !<br>
+    Do you want to change It ?<br>
+    Submit Request <br>
+    <span class="box"><a href="https://docs.google.com/forms/d/e/1FAIpQLScrHwrJjCwCha1DkU4ZNGvWP2zR41vlqTsyVuK-prMGZjFgQQ/viewform?embedded=true" target="_blank">Here</a></span>
   </div>
-</div>
-    <h1>Collabor8</h1>
+  <div class="login">
+    <a href="#">Login</a>
+    <div class="tooltip">
+      You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
+    </div>
+  </div>
+  <h1 class="hub-title">Collabor8</h1>
+</header>
     <div class="social">
       <div>
         <a href="#">

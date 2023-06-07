@@ -144,80 +144,7 @@
             color: white;
             text-decoration: none;
         }.container {
-      position: relative;
-      width: 250px;
-      height: 200px;
-      margin: 20px auto;
-    }
-    .rectangle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #00b3b3;
-      transition: all 1s ease;
-      cursor: pointer;
-    }
-    #left-rectangle {
-      top: calc(50% - 21px);
-      left: calc(50% - 65px);
-      background-color: #008c8c;
-      width: 50px;
-      height: 21px
-    }
-    #right-rectangle {
-      top: calc(50% - 48px);
-      left: calc(50% + -65px);
-      background-color: #00a6a6;
-      width: 70px;
-      height: 14px;
-    }
-    .triangle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      transition: all 1s ease;
-      cursor: pointer;
-    }
-    #top-triangle {
-      top: calc(50% - 75px);
-      left: calc(50% - 65px);
-      border-bottom: 20px solid #008c8c;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-    }
-    #bottom-triangle {
-      top: calc(50% + -88px);
-      left: calc(50% - 65px);
-      border-top: 10px solid white;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-    }
-    #additional-triangle {
-      top: calc(50% + -2px);
-      left: calc(50% - 65px);
-      border-bottom: 10px solid white;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-    }
-    .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 12px;
-      font-weight: bold;
-      color: white;
-      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-      -webkit-background-clip: text;
-      background-clip: text;
-    }
-    .container {
-      position: relative;
-      width: 150px;
+      position: relative;width: 150px;
       height: 200px;
       margin: 20px auto;
     }
@@ -368,6 +295,77 @@
       border-bottom: 70px solid #00a6a6;
       transition: all 1s ease;
       cursor: pointer;
+    }.container {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .rectangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00b3b3;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #left-rectangle {
+      top: calc(50% - 21px);
+      left: calc(50% - 65px);
+      background-color: #008c8c;
+      width: 50px;
+      height: 21px
+    }
+    #right-rectangle {
+      top: calc(50% - 48px);
+      left: calc(50% + -65px);
+      background-color: #00a6a6;
+      width: 70px;
+      height: 14px;
+    }
+    .triangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #top-triangle {
+      top: calc(50% - 75px);
+      left: calc(50% - 65px);
+      border-bottom: 20px solid #008c8c;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    #bottom-triangle {
+      top: calc(50% + -88px);
+      left: calc(50% - 65px);
+      border-top: 10px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    #additional-triangle {
+      top: calc(50% + -2px);
+      left: calc(50% - 65px);
+      border-bottom: 10px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      background-clip: text;
     }
     .community-container {
       color: #00b3b3;

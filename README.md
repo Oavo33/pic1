@@ -77,6 +77,9 @@
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
 }
+a.login {
+  color: yellow !important;
+}
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;

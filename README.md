@@ -64,7 +64,7 @@
 }
 .tooltip {
   position: absolute;
-  top: 65%;
+  top: 75%;
   right: 35%;
   width: 200px;
   background-color: #f9f9f9;

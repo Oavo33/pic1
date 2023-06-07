@@ -220,6 +220,44 @@
     }
     .container:hover .new-page-link {
       display: block;
+    }.container {
+      position: relative;
+      width: 150px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .pentagon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 61.51px; /* Adjusted height for pentagon shape */
+      background-color: #00b3b3;
+      transition: all 1s ease;
+      cursor: pointer;
+      clip-path: polygon(50% 0%, 100% 38.36%, 82.06% 100%, 17.94% 100%, 0% 38.36%); /* Pentagon shape clip path */
+    }
+    #left-pentagon {
+      top: calc(50% - 16px); 
+      left: calc(50% - 81px);
+      background-color: #008c8c;
+      transform: rotate(-32deg);
+    }
+    #right-pentagon {
+      top: calc(50% + -16px); 
+      left: calc(50% - -21px); 
+      background-color: #00a6a6;
+      transform: rotate(32deg); 
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      font-weight: bold;
+      color: white;
     }
     .community-container {
       color: #00b3b3;
@@ -411,7 +449,17 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></div>  <div class="container">
+  </div></div><div class="container">
+    <div id="center-pentagon" class="pentagon">
+      <span class="text">Jakes<br>Gardens</span>
+    </div>
+    <div id="left-pentagon" class="pentagon">
+      <span class="text">Rule</span>
+    </div>
+    <div id="right-pentagon" class="pentagon">
+      <span class="text">Now</span>
+    </div>
+  </div>  <div class="container">
     <div id="center-hexagon" class="hexagon">
       <span class="text">Jakes<br>Gardens</span>
     </div>
@@ -479,7 +527,21 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>var centerHexagon = document.getElementById("center-hexagon");
+<script>var centerPentagon = document.getElementById("center-pentagon");
+    var leftPentagon = document.getElementById("left-pentagon");
+    var rightPentagon = document.getElementById("right-pentagon");
+    function movePentagons() {
+      centerPentagon.style.transform = "translate(-50%, -50%) translateY(0px)";
+      leftPentagon.style.transform = "translate(-50%, -50%) translateX(54px) translateY(-25px) rotate(36deg)";
+      rightPentagon.style.transform = "translate(-50%, -50%) translateX(-22px) translateY(68px) rotate(-38deg)";
+      // Redirect to the specified page after the animation completes
+      setTimeout(function() {  
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+    centerPentagon.addEventListener("click", movePentagons);
+    leftPentagon.addEventListener("click", movePentagons);
+    rightPentagon.addEventListener("click", movePentagons);
+var centerHexagon = document.getElementById("center-hexagon");
     var leftHexagon = document.getElementById("left-hexagon");
     var rightHexagon = document.getElementById("right-hexagon");
     function moveHexagons() {

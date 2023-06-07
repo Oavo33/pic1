@@ -258,6 +258,45 @@
       font-size: 10px;
       font-weight: bold;
       color: white;
+    }.container {
+      position: relative;
+      width: 150px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45px;
+      height: 45px;
+      background-color: #00b3b3;
+      border-radius: 50%;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #center-circle {
+      top: calc(50% - 10px);
+      left: calc(50% - 12.5px);
+      background-color: #00b3b3;
+    }
+    #left-circle {
+      top: calc(50% + 40px);
+      left: calc(50% - 40px);
+      background-color: #008c8c;
+    }
+    #triangle {
+      position: absolute;
+      top: calc(50% + 10px);
+      left: calc(50% - 50px);
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 70px solid #00a6a6;
+      transition: all 1s ease;
+      cursor: pointer;
     }
     .community-container {
       color: #00b3b3;
@@ -474,6 +513,10 @@
     <div id="right-square" class="square">
       <span class="text">Jakes<br>Gardens</span>
     </div>
+  </div><div class="container">
+    <div id="center-circle" class="circle"></div>
+    <div id="left-circle" class="circle"></div>
+    <div id="triangle"></div>
   </div>
 <div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
@@ -521,7 +564,21 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>var centerPentagon = document.getElementById("center-pentagon");
+<script>var centerCircle = document.getElementById("center-circle");
+    var leftCircle = document.getElementById("left-circle");
+    var triangle = document.getElementById("triangle");
+    function moveShapes() {
+      centerCircle.style.transform = "translate(-50%, -50%) translateY(5px)";
+      leftCircle.style.transform = "translate(-50%, -50%) translateX(12px) translateY(-45px)";
+      triangle.style.transform = "translate(-50%, -50%) translateX(30px) translateY(25px)rotate(180deg)";
+// Redirect to the specified page after the animation completes
+      setTimeout(function() {  
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+    centerCircle.addEventListener("click", moveShapes);
+    leftCircle.addEventListener("click", moveShapes);
+    triangle.addEventListener("click", moveShapes);
+    var centerPentagon = document.getElementById("center-pentagon");
     var leftPentagon = document.getElementById("left-pentagon");
     var rightPentagon = document.getElementById("right-pentagon");
     function movePentagons() {

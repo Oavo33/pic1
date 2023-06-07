@@ -140,7 +140,7 @@
         }
         .box {
             display: inline-block;
-            padding: 3px;
+            padding: 1px;
             border: 1px solid #E53E3E;
             background-color: transparent;
         }

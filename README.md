@@ -149,7 +149,10 @@
       width: 150px;
       height: 200px;
       margin: 20px auto;
-    }
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
     .triangle {
       position: absolute;
       top: 50%;

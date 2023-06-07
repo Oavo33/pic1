@@ -181,6 +181,42 @@
       color: white;
       background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
       -webkit-background-clip: text;background-clip: text;
+    }.container {
+      position: relative;
+      width: 150px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .hexagon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 34.64px;
+      background-color: #00b3b3;
+      transition: all 1s ease;
+      cursor: pointer;
+      clip-path: polygon(50% 0%, 90.5% 25%, 90.5% 75%, 50% 100%, 9.5% 75%, 9.5% 25%); 
+    }
+    #left-hexagon {
+      top: calc(50% - 27px); 
+      left: calc(50% - 24px); 
+      background-color: #008c8c;
+    }
+    #right-hexagon {
+      top: calc(50% + 27px); 
+      left: calc(50% + 24px); 
+      background-color: #00a6a6;
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      font-weight: bold;
+      color: white;
     }
     .container:hover .new-page-link {
       display: block;
@@ -375,7 +411,17 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></div>
+  </div></div>  <div class="container">
+    <div id="center-hexagon" class="hexagon">
+      <span class="text">Jakes<br>Gardens</span>
+    </div>
+    <div id="left-hexagon" class="hexagon">
+      <span class="text">Rule</span>
+    </div>
+    <div id="right-hexagon" class="hexagon">
+      <span class="text">Now</span>
+    </div>
+  </div>
 <div class="container">
     <div id="center-square" class="square">
       <span class="text">Jakes<br>Gardens</span>
@@ -433,7 +479,21 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>var centerSquare = document.getElementById("center-square");
+<script>var centerHexagon = document.getElementById("center-hexagon");
+    var leftHexagon = document.getElementById("left-hexagon");
+    var rightHexagon = document.getElementById("right-hexagon");
+    function moveHexagons() {
+      centerHexagon.style.transform = "translate(-50%, -50%) translateY(0px)";
+      leftHexagon.style.transform = "translate(-50%, -50%) translateX(48px) translateY(54px)rotate(-360deg)";
+      rightHexagon.style.transform = "translate(-50%, -50%) translateX(-48px) translateY(-54px)rotate(360deg)";
+      // Redirect to the specified page after the animation completes
+      setTimeout(function() {  
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+    centerHexagon.addEventListener("click", moveHexagons);
+    leftHexagon.addEventListener("click", moveHexagons);
+    rightHexagon.addEventListener("click", moveHexagons);
+    var centerSquare = document.getElementById("center-square");
     var leftSquare = document.getElementById("left-square");
     var rightSquare = document.getElementById("right-square");
     function moveSquares() {
@@ -442,7 +502,7 @@
       rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px)rotate(360deg)";
       setTimeout(function() {
         window.location.href = "https://oavo33.github.io/WindowCleaning/";
-      }, 1000); // 1000 milliseconds = 1 second
+      }, 1000); 
     }
     centerSquare.addEventListener("click", moveSquares);
     leftSquare.addEventListener("click", moveSquares);

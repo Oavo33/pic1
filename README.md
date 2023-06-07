@@ -420,7 +420,7 @@ a.login {
   </div>
 </header>
 <div class="hub-card">
-  <h1>60% Community + 40% Local Business = Success</h1>
+  <h1>Welcome To The Future !</h1>
   <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
   <div class="dropdown-container">
     <div class="dropdown">

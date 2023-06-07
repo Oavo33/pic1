@@ -222,6 +222,21 @@
     .reflect-container:hover .reflection {
       opacity: 0.8;
     }
+    .new-page-link {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      font-size: 11px;
+      font-weight: bold;
+      color: yellow;
+      text-decoration: none;
+      z-index: 3;
+      display: none;
+    }
+    .container:hover .new-page-link {
+      display: block;
+    }
     .community-container {
       color: #00b3b3;
       text-align: center;
@@ -414,14 +429,15 @@
     </div>
   </div></div>
 <div class="container">
-  <div id="center-triangle" class="triangle"></div>
-  <div id="left-triangle" class="triangle"></div>
-  <div id="right-triangle" class="triangle"></div>
-  <div class="reflect-container">
-    <div class="reflect-text">L<span>o</span><span>f</span><span>t</span><span>i</span><span>e</span><span>s</span></div>
-    <div class="reflection">W<span>i</span><span>n</span><span>d</span><span>o</span><span>w</span><span>s</span></div>
+    <div id="center-triangle" class="triangle"></div>
+    <div id="left-triangle" class="triangle"></div>
+    <div id="right-triangle" class="triangle"></div>
+    <div class="reflect-container">
+      <div class="reflect-text">L<span>o</span><span>f</span><span>t</span><span>i</span><span>e</span><span>s</span></div>
+      <div class="reflection">W<span>i</span><span>n</span><span>d</span><span>o</span><span>w</span><span>s</span></div>
+    </div>
+    <a href="https://oavo33.github.io/WindowCleaning/" class="new-page-link" id="new-page-link">My Page</a>
   </div>
-</div>
 <div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
@@ -484,6 +500,10 @@
       rightTriangle.style.transform = 'translate(-50%, -50%)';
     }
   }
+  document.getElementById("new-page-link").addEventListener("click", function(event) {
+      event.preventDefault();
+      window.location.href = "https://oavo33.github.io/WindowCleaning/";
+    });
 </script>
 </body>
 </html>

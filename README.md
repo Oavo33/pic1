@@ -19,7 +19,7 @@
       text-align: center;
       position: relative;
     }header .hub-title {
-  font-size: 40px; 
+  font-size: 55px; 
 }
     header h1 {
       font-size: 65px;

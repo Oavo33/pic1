@@ -54,27 +54,29 @@
   right: 14px;
   display: flex;
   align-items: center;
+  font-weight: bold;
+  text-decoration: none;
 }
-    .login:hover .tooltip {
-      visibility: visible;
-      opacity: 1;
-    }
-    .tooltip {
-      position: absolute;
-      top: calc(100% + 10px);
-      right: 0;
-      width: 200px;
-      background-color: #f9f9f9;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 14px;
-      color: black;
-      text-align: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
+.login:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 200px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
     .hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;

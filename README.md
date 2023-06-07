@@ -41,13 +41,7 @@
     .social div a img {
       width: 15px;
       height: 15px;
-    }
-    .header {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    .login {
+    }.login {
       position: absolute;top: 14px;
       right: 14px;
       display: flex;

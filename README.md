@@ -48,14 +48,15 @@
       align-items: center;
     }
     .login {
-  position: absolute;
+      position: absolute;top: 14px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      text-decoration: none;
+}
+.login a {
   color: yellow !important;
-  top: 14px;
-  right: 14px;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  text-decoration: none;
 }
 .login:hover .tooltip {
   visibility: visible;
@@ -76,11 +77,7 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s ease-in-out;
-}
-a.login {
-  color: yellow !important;
-}
-    .hub-card {
+}.hub-card {
       background: linear-gradient(to bottom, #008080, #00b3b3);
       border-radius: 10px;
       border: 2px solid #ffffff;

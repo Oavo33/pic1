@@ -131,7 +131,7 @@
             left: 10px;
             font-size: 10px;
             transform: rotate(-7deg);
-            top: 1%;
+            top: 2%;
             color: white;
         }
         .box {

@@ -331,45 +331,39 @@
       display: block;
     }
     footer {
-      background: linear-gradient(to bottom, #ffffff, #00b3b3);
-      padding: 35px;
-      color: #ffffff;
-      text-align: center;
-      font-size: 14px;
-    }
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .footer-container .box {
-      background-color: #00b3b3;
-      color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      text-align: center;
-      margin: 10px;
-      cursor: pointer;
-    }
-    .footer-container .box h3 {
-      margin: 0;
-    }
-    .footer-container p {
-      margin-top: 10px;
-    }
-    .footer-container input[type="text"] {
-      width: 100%;
-      padding: 5px;
-      border-radius: 5px;
-      border: none;
-      background-color: #008080;
-      color: #ffffff;
-      margin-top: 5px;
-    }
+    background: linear-gradient(to bottom, #ffffff, #00b3b3);
+    padding: 35px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-container .box {
+    background-color: #00b3b3;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .footer-container .box h3 {
+    margin: 0;
+  }
+  .footer-container .box:first-child {
+    border: 1px solid #ffffff;
+  }
+  .footer-container .box:last-child {
+    border: 1px solid #ffffff;
+  }
     @media (max-width: 768px) {
       header h1 {
         font-size: 30px;
@@ -521,7 +515,7 @@
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
     </div>
-    <div class="box" onclick="scrollToTop()">🚀</div> 
+    <div class="box" onclick="scrollToTop()">🚀</div>
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>

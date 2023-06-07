@@ -143,7 +143,78 @@
         .box a {
             color: white;
             text-decoration: none;
-        }
+        }.container {
+      position: relative;
+      width: 250px;
+      height: 200px;
+      margin: 20px auto;
+    }
+    .rectangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00b3b3;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #left-rectangle {
+      top: calc(50% - 21px);
+      left: calc(50% - 65px);
+      background-color: #008c8c;
+      width: 50px;
+      height: 21px
+    }
+    #right-rectangle {
+      top: calc(50% - 48px);
+      left: calc(50% + -65px);
+      background-color: #00a6a6;
+      width: 70px;
+      height: 14px;
+    }
+    .triangle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      transition: all 1s ease;
+      cursor: pointer;
+    }
+    #top-triangle {
+      top: calc(50% - 75px);
+      left: calc(50% - 65px);
+      border-bottom: 20px solid #008c8c;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    #bottom-triangle {
+      top: calc(50% + -88px);
+      left: calc(50% - 65px);
+      border-top: 10px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    #additional-triangle {
+      top: calc(50% + -2px);
+      left: calc(50% - 65px);
+      border-bottom: 10px solid white;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
     .container {
       position: relative;
       width: 150px;
@@ -482,7 +553,13 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></div><div class="container">
+  </div></div><div class="container"><div class="container">
+    <div id="left-rectangle" class="rectangle"></div>
+    <div id="right-rectangle" class="rectangle"></div>
+    <div id="top-triangle" class="triangle"></div>
+    <div id="bottom-triangle" class="triangle"></div>
+    <div id="additional-triangle" class="triangle"></div>
+  </div>
     <div id="center-pentagon" class="pentagon">
       <span class="text">Jakes<br>Gardens</span>
     </div>
@@ -564,7 +641,26 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>var centerCircle = document.getElementById("center-circle");
+<script>var leftRectangle = document.getElementById("left-rectangle");
+    var rightRectangle = document.getElementById("right-rectangle");
+    var topTriangle = document.getElementById("top-triangle");
+    var bottomTriangle = document.getElementById("bottom-triangle");
+    var additionalTriangle = document.getElementById("additional-triangle");function moveShapes() {
+      leftRectangle.style.transform = "translate(-50%, -50%) translateX(21px) translateY(-48px)";
+      rightRectangle.style.transform = "translate(-50%, -50%) translateX(25px) translateY(15px) rotate(90deg)";
+      topTriangle.style.transform = "translate(-50%, -50%) translateY(6px) translateX(55px) rotate(90deg)";
+      bottomTriangle.style.transform = "translate(-50%, -50%) translateY(7px) translateX(5px)";
+      additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-55px) translateX(5px)";
+// Redirect to the specified page after the animation completes
+      setTimeout(function() {
+        }, 1000); // 1000 milliseconds = 1 second
+    }
+leftRectangle.addEventListener("click", moveShapes);
+    rightRectangle.addEventListener("click", moveShapes);
+    topTriangle.addEventListener("click", moveShapes);
+    bottomTriangle.addEventListener("click", moveShapes);
+    additionalTriangle.addEventListener("click", moveShapes);
+    var centerCircle = document.getElementById("center-circle");
     var leftCircle = document.getElementById("left-circle");
     var triangle = document.getElementById("triangle");
     function moveShapes() {

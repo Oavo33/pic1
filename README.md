@@ -22,7 +22,7 @@
   font-size: 49px; 
 }
     header h1 {
-      font-size: 65px;
+      font-size: 49px;
       color: #ffffff;
       margin: 0;
     }

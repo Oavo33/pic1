@@ -388,9 +388,7 @@
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
-  <h1 class="hub-title">Collabor8</h1>
-</header>
-    <div class="social">
+  <h1 class="hub-title">Collabor8</h1><div class="social">
       <div>
         <a href="#">
           <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">

@@ -434,7 +434,7 @@
       <div class="reflect-text">F<span>o</span><span>r</span><span>d</span><span>i</span><span>e</span><span>s</span></div>
       <div class="reflection">P<span>r</span><span>e</span><span>s</span><span>s</span><span>M</span><span>e</span></div>
     </div>
-    <a href="https://oavo33.github.io/WindowCleaning/" class="new-page-link" id="new-page-link">My Page</a>
+    <a href="https://oavo33.github.io/WindowCleaning/" class="new-page-link" id="new-page-link">My Page<br>🧽</a>
   </div>
 <div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">

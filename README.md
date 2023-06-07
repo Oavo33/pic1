@@ -84,7 +84,7 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
       padding: 10px;
       text-align: center;
-      max-width: 200px;
+      max-width: 210px;
       width: 45%;
       margin: 0 auto;
       margin-top: -140px;

@@ -436,7 +436,7 @@
     <div id="right-triangle" class="triangle"></div>
     <div class="reflect-container">
       <div class="reflect-text">L<span>o</span><span>f</span><span>t</span><span>i</span><span>e</span><span>s</span></div>
-      <div class="reflection">W<span>i</span><span>n</span><span>d</span><span>o</span><span>w</span><span>s</span></div>
+      <div class="reflection">P<span>r</span><span>e</span><span>s</span><span>s</span><span>M</span><span>e</span></div>
     </div>
     <a href="https://oavo33.github.io/WindowCleaning/" class="new-page-link" id="new-page-link">My Page</a>
   </div>

@@ -69,7 +69,7 @@
       border-radius: 5px;
       padding: 10px;
       font-size: 14px;
-      color: yellow;
+      color: black;
       text-align: center;
       visibility: hidden;
       opacity: 0;

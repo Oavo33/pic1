@@ -15,7 +15,7 @@
     }
     header {
       background: linear-gradient(to bottom, #00b3b3, #008080);
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
       position: relative;
     }

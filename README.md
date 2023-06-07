@@ -476,12 +476,20 @@
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
       <h3>What Do You Think About Our Community Hub?</h3>
     </div>
+    <div class="box" onclick="scrollToTop()">
+      <img src="path/to/rocket-icon.png" alt="Rocket Icon">
+    </div>
   </div>
   <div class="footer-container">
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>
+<script>function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
   const centerTriangle = document.getElementById('center-triangle');
   const leftTriangle = document.getElementById('left-triangle');
   const rightTriangle = document.getElementById('right-triangle');

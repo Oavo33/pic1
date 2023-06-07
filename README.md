@@ -20,7 +20,7 @@
       position: relative;
     }
     header h1 {
-      font-size: 45px;
+      font-size: 65px;
       color: #ffffff;
       margin: 0;
     }

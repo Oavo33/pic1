@@ -87,18 +87,18 @@
       max-width: 200px;
       width: 45%;
       margin: 0 auto;
-      margin-top: -73px;
+      margin-top: -53px;
       position: relative;
       z-index: 2;
     }
     .hub-card h1 {
-      font-size: 14px;
+      font-size: 18px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #ffffff;
     }
     .hub-card p {
-      font-size: 10px;
+      font-size: 14px;
       margin-bottom: 2px;
       color: #ffffff;
     }

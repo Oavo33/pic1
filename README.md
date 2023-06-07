@@ -48,13 +48,13 @@
       align-items: center;
     }
     .login {
-      position: absolute;
-      color: yellow;
-      top: 14px;
-      right: 14px;
-      display: flex;
-      align-items: center;
-    }
+  position: absolute;
+  color: yellow !important;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+}
     .login:hover .tooltip {
       visibility: visible;
       opacity: 1;

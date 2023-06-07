@@ -149,91 +149,38 @@
       width: 150px;
       height: 200px;
       margin: 20px auto;
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;}
-    .triangle {
+    }
+    .square {
       position: absolute;
       top: 50%;
-      left: 40.5%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      border-left: 30px solid transparent;
-      border-right: 30px solid transparent;
-      border-bottom: 60px solid #00b3b3;
+      width: 60px;
+      height: 60px;
+      background-color: #00b3b3;
       transition: all 1s ease;
+      cursor: pointer;
     }
-    #left-triangle {
+    #left-square {
       top: calc(50% - 30px);
-      left: calc(50% - 60px);
-      border-bottom-color: #008c8c;
+      left: calc(50% - -60px);
+      background-color: #008c8c;
     }
-    #right-triangle {
+    #right-square {
       top: calc(50% + 30px);
       left: calc(50% - 60px);
-      border-bottom-color: #00a6a6;
+      background-color: #00a6a6;
     }
-    #center-triangle:hover {
-      transform: translate(-50%, -50%) rotate(180deg) translateY(5px);
-    }
-    #center-triangle:hover ~ #left-triangle {
-      transform: translate(-50%, -50%) translateX(46px) translateY(2px);
-    }
-    #center-triangle:hover ~ #right-triangle {
-      transform: translate(-50%, -50%) translateX(46px) translateY(-58px);
-    }
-    .reflect-text {
+    .text {
       position: absolute;
-      top: 49%;
-      left: 60%;
-      transform: translate(-50%, -50%) rotate(65deg);
-      font-size: 13px;
-      font-weight: bold;
-      color: transparent;
-      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 1s ease;
-      z-index: 2;
-    }
-    .reflection {
-      position: absolute;
-      top: 70%;
-      left: 43%;
-      transform: translate(-50%, -50%) rotate(0.1deg);
-      font-size: 13px;
-      font-weight: bold;
-      color: transparent;
-      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 1s ease;
-      z-index: 2;
-    }
-    #center-triangle:hover ~ .reflect-container .reflect-text {
-      transform: translate(-50%, -50%) translateX(-25px) translateY(-45px) rotate(0.1deg);
-    }
-    #center-triangle:hover ~ .reflect-container .reflection {
-      transform: translate(-50%, -50%) translateX(-2px) translateY(-28px);
-    }
-    .reflect-container:hover .reflection {
-      opacity: 0.8;
-    }
-    .new-page-link {
-      position: absolute;
-      top: 40%;
-      left: 40%;
+      top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      font-size: 11px;
+      font-size: 12px;
       font-weight: bold;
-      color: yellow;
-      text-decoration: none;
-      z-index: 3;
-      display: none;
+      color: white;
+      background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;background-clip: text;
     }
     .container:hover .new-page-link {
       display: block;
@@ -430,14 +377,15 @@
     </div>
   </div></div>
 <div class="container">
-    <div id="center-triangle" class="triangle"></div>
-    <div id="left-triangle" class="triangle"></div>
-    <div id="right-triangle" class="triangle"></div>
-    <div class="reflect-container">
-      <div class="reflect-text">F<span>o</span><span>r</span><span>d</span><span>i</span><span>e</span><span>s</span></div>
-      <div class="reflection">P<span>r</span><span>e</span><span>s</span><span>s</span><span>M</span><span>e</span></div>
+    <div id="center-square" class="square">
+      <span class="text">Jakes<br>Gardens</span>
     </div>
-    <a href="https://oavo33.github.io/WindowCleaning/" class="new-page-link" id="new-page-link">My Page<br>   🧽</a>
+    <div id="left-square" class="square">
+      <span class="text">Jakes<br>Gardens</span>
+    </div>
+    <div id="right-square" class="square">
+      <span class="text">Jakes<br>Gardens</span>
+    </div>
   </div>
 <div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
@@ -485,32 +433,25 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
-<script>function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-  const centerTriangle = document.getElementById('center-triangle');
-  const leftTriangle = document.getElementById('left-triangle');
-  const rightTriangle = document.getElementById('right-triangle');
-  centerTriangle.addEventListener('mouseover', handleTriangleHover);
-  centerTriangle.addEventListener('touchstart', handleTriangleHover);
-  centerTriangle.addEventListener('mouseout', handleTriangleHover);
-  centerTriangle.addEventListener('touchend', handleTriangleHover);
-  function handleTriangleHover(event) {
-    if (event.type === 'mouseover' || event.type === 'touchstart') {
-      leftTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(2px)';
-      rightTriangle.style.transform = 'translate(-50%, -50%) translateX(46px) translateY(-58px)';
-    } else if (event.type === 'mouseout' || event.type === 'touchend') {
-      leftTriangle.style.transform = 'translate(-50%, -50%)';
-      rightTriangle.style.transform = 'translate(-50%, -50%)';
+<script>var centerSquare = document.getElementById("center-square");
+    var leftSquare = document.getElementById("left-square");
+    var rightSquare = document.getElementById("right-square");
+    function moveSquares() {
+      centerSquare.style.transform = "translate(-50%, -50%) translateY(5px)";
+      leftSquare.style.transform = "translate(-50%, -50%) translateX(-60px) translateY(36px)rotate(-360deg)";
+      rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px)rotate(360deg)";
+      setTimeout(function() {
+        window.location.href = "https://oavo33.github.io/WindowCleaning/";
+      }, 1000); // 1000 milliseconds = 1 second
     }
-  }
-  document.getElementById("new-page-link").addEventListener("click", function(event) {
-      event.preventDefault();
-      window.location.href = "https://oavo33.github.io/WindowCleaning/";
-    });
-</script>
+    centerSquare.addEventListener("click", moveSquares);
+    leftSquare.addEventListener("click", moveSquares);
+    rightSquare.addEventListener("click", moveSquares);
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+  });
+}</script>
 </body>
 </html>

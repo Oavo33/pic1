@@ -128,7 +128,7 @@
             font-family: 'Space Mono', monospace;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             z-index: 1;
-            left: 10px;
+            left: 2px;
             font-size: 10px;
             transform: rotate(-7deg);
             top: 2%;

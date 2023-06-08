@@ -651,84 +651,83 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer><script>var leftRectangle = document.getElementById("left-rectangle");
-    var rightRectangle = document.getElementById("right-rectangle");
-    var topTriangle = document.getElementById("top-triangle");
-    var bottomTriangle = document.getElementById("bottom-triangle");
-    var additionalTriangle = document.getElementById("additional-triangle");function moveShapes() {
-      leftRectangle.style.transform = "translate(-50%, -50%) translateX(21px) translateY(-48px)";
-      rightRectangle.style.transform = "translate(-50%, -50%) translateX(25px) translateY(15px) rotate(90deg)";
-      topTriangle.style.transform = "translate(-50%, -50%) translateY(6px) translateX(55px) rotate(90deg)";
-      bottomTriangle.style.transform = "translate(-50%, -50%) translateY(7px) translateX(5px)";
-      additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-55px) translateX(5px)";
-// Redirect to the specified page after the animation completes
-      setTimeout(function() {
-        }, 1000); // 1000 milliseconds = 1 second
-    }
-leftRectangle.addEventListener("click", moveShapes);
-    rightRectangle.addEventListener("click", moveShapes);
-    topTriangle.addEventListener("click", moveShapes);
-    bottomTriangle.addEventListener("click", moveShapes);
-    additionalTriangle.addEventListener("click", moveShapes);
-    var centerCircle = document.getElementById("center-circle");
-    var leftCircle = document.getElementById("left-circle");
-    var triangle = document.getElementById("triangle");
-    function moveShapes() {
-      centerCircle.style.transform = "translate(-50%, -50%) translateX(1px) translateY(5px)";
-      leftCircle.style.transform = "translate(-50%, -50%) translateX(12px) translateY(-45px)";
-      triangle.style.transform = "translate(-50%, -50%) translateX(30px) translateY(25px)rotate(180deg)";
-// Redirect to the specified page after the animation completes
-      setTimeout(function() {  
-      }, 1000); // 1000 milliseconds = 1 second
-    }
-    centerCircle.addEventListener("click", moveShapes);
-    leftCircle.addEventListener("click", moveShapes);
-    triangle.addEventListener("click", moveShapes);
-    var centerPentagon = document.getElementById("center-pentagon");
-    var leftPentagon = document.getElementById("left-pentagon");
-    var rightPentagon = document.getElementById("right-pentagon");
-    function movePentagons() {
-      centerPentagon.style.transform = "translate(-50%, -50%) translateY(0px)";
-      leftPentagon.style.transform = "translate(-50%, -50%) translateX(54px) translateY(-25px) rotate(36deg)";
-      rightPentagon.style.transform = "translate(-50%, -50%) translateX(-22px) translateY(68px) rotate(-38deg)";
-      // Redirect to the specified page after the animation completes
-      setTimeout(function() {  
-      }, 1000); // 1000 milliseconds = 1 second
-    }
-    centerPentagon.addEventListener("click", movePentagons);
-    leftPentagon.addEventListener("click", movePentagons);
-    rightPentagon.addEventListener("click", movePentagons);
+var rightRectangle = document.getElementById("right-rectangle");
+var topTriangle = document.getElementById("top-triangle");
+var bottomTriangle = document.getElementById("bottom-triangle");
+var additionalTriangle = document.getElementById("additional-triangle");
+function moveRectangleAndTriangles() {
+  leftRectangle.style.transform = "translate(-50%, -50%) translateX(21px) translateY(-48px)";
+  rightRectangle.style.transform = "translate(-50%, -50%) translateX(25px) translateY(15px) rotate(90deg)";
+  topTriangle.style.transform = "translate(-50%, -50%) translateY(6px) translateX(55px) rotate(90deg)";
+  bottomTriangle.style.transform = "translate(-50%, -50%) translateY(7px) translateX(5px)";
+  additionalTriangle.style.transform = "translate(-50%, -50%) translateY(-55px) translateX(5px)";setTimeout(function() {
+    // window.location.href = "https://example.com";
+  }, 1000); 
+}
+leftRectangle.addEventListener("click", moveRectangleAndTriangles);
+rightRectangle.addEventListener("click", moveRectangleAndTriangles);
+topTriangle.addEventListener("click", moveRectangleAndTriangles);
+bottomTriangle.addEventListener("click", moveRectangleAndTriangles);
+additionalTriangle.addEventListener("click", moveRectangleAndTriangles);
+var centerCircle = document.getElementById("center-circle");
+var leftCircle = document.getElementById("left-circle");
+var triangle = document.getElementById("triangle");
+function moveCircleAndTriangle() {
+  centerCircle.style.transform = "translate(-50%, -50%) translateX(1px) translateY(5px)";
+  leftCircle.style.transform = "translate(-50%, -50%) translateX(12px) translateY(-45px)";
+  triangle.style.transform = "translate(-50%, -50%) translateX(30px) translateY(25px) rotate(180deg)";
+  setTimeout(function() {
+    // window.location.href = "https://example.com";
+  }, 1000); 
+}
+centerCircle.addEventListener("click", moveCircleAndTriangle);
+leftCircle.addEventListener("click", moveCircleAndTriangle);
+triangle.addEventListener("click", moveCircleAndTriangle);
+var centerPentagon = document.getElementById("center-pentagon");
+var leftPentagon = document.getElementById("left-pentagon");
+var rightPentagon = document.getElementById("right-pentagon");
+function movePentagons() {
+  centerPentagon.style.transform = "translate(-50%, -50%) translateY(0px)";
+  leftPentagon.style.transform = "translate(-50%, -50%) translateX(54px) translateY(-25px) rotate(36deg)";
+  rightPentagon.style.transform = "translate(-50%, -50%) translateX(-22px) translateY(68px) rotate(-38deg)";setTimeout(function() {
+    // window.location.href = "https://example.com";
+  }, 1000);
+}
+centerPentagon.addEventListener("click", movePentagons);
+leftPentagon.addEventListener("click", movePentagons);
+rightPentagon.addEventListener("click", movePentagons);
 var centerHexagon = document.getElementById("center-hexagon");
-    var leftHexagon = document.getElementById("left-hexagon");
-    var rightHexagon = document.getElementById("right-hexagon");
-    function moveHexagons() {
-      centerHexagon.style.transform = "translate(-50%, -50%) translateY(0px)";
-      leftHexagon.style.transform = "translate(-50%, -50%) translateX(48px) translateY(54px)rotate(-360deg)";
-      rightHexagon.style.transform = "translate(-50%, -50%) translateX(-48px) translateY(-54px)rotate(360deg)";
-      // Redirect to the specified page after the animation completes
-      setTimeout(function() {  
-      }, 1000); // 1000 milliseconds = 1 second
-    }
-    centerHexagon.addEventListener("click", moveHexagons);
-    leftHexagon.addEventListener("click", moveHexagons);
-    rightHexagon.addEventListener("click", moveHexagons);
-    var centerSquare = document.getElementById("center-square");
-    var leftSquare = document.getElementById("left-square");
-    var rightSquare = document.getElementById("right-square");
-    function moveSquares() {
-      centerSquare.style.transform = "translate(-50%, -50%) translateY(5px)";
-      leftSquare.style.transform = "translate(-50%, -50%) translateX(-60px) translateY(36px)rotate(-360deg)";
-      rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px)rotate(360deg)";
-      setTimeout(function() {
-        window.location.href = "https://oavo33.github.io/WindowCleaning/";
-      }, 1000); 
-    }
-    centerSquare.addEventListener("click", moveSquares);
-    leftSquare.addEventListener("click", moveSquares);
-    rightSquare.addEventListener("click", moveSquares);
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+var leftHexagon = document.getElementById("left-hexagon");
+var rightHexagon = document.getElementById("right-hexagon");
+function moveHexagons() {
+  centerHexagon.style.transform = "translate(-50%, -50%) translateY(0px)";
+  leftHexagon.style.transform = "translate(-50%, -50%) translateX(48px) translateY(54px) rotate(-360deg)";
+  rightHexagon.style.transform = "translate(-50%, -50%) translateX(-48px) translateY(-54px) rotate(360deg)";
+  setTimeout(function() {
+    // window.location.href = "https://example.com";
+  }, 1000);
+}
+centerHexagon.addEventListener("click", moveHexagons);
+leftHexagon.addEventListener("click", moveHexagons);
+rightHexagon.addEventListener("click", moveHexagons);
+var centerSquare = document.getElementById("center-square");
+var leftSquare = document.getElementById("left-square");
+var rightSquare = document.getElementById("right-square");
+function moveSquares() {
+  centerSquare.style.transform = "translate(-50%, -50%) translateY(5px)";
+  leftSquare.style.transform = "translate(-50%, -50%) translateX(-60px) translateY(36px) rotate(-360deg)";
+  rightSquare.style.transform = "translate(-50%, -50%) translateX(60px) translateY(-24px) rotate(360deg)";
+  setTimeout(function() {
+    window.location.href = "https://oavo33.github.io/WindowCleaning/";
+  }, 1000); // 1000 milliseconds = 1 second
+}
+centerSquare.addEventListener("click", moveSquares);
+leftSquare.addEventListener("click", moveSquares);
+rightSquare.addEventListener("click", moveSquares);
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
   });
 }</script>
 </body>

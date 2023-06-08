@@ -415,7 +415,7 @@
       background: linear-gradient(to bottom, #00b3b3, #ffffff);
       border-radius: 10px;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 15px;
+      padding: 5px;
       justify-items: center;
     }
     .grid-item {

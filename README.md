@@ -581,22 +581,7 @@
     <p class="community-text">White Paper</p>
     <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
   </div>
-</div>
-
-<footer>
-  <div class="footer-container">
-    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
-      <h3>What Do You Think About Our Community Hub?</h3>
-    </div>
-    <div class="box" onclick="scrollToTop()">🚀</div>
-  </div>
-  <div class="footer-container">
-    <p>&copy; 2023 Lofties. All rights reserved.</p>
-  </div>
-</footer>
-</div> <!-- Closing tag for the first section -->
-
-<div class="grid-wrapper">
+</div><div class="grid-wrapper">
   <div class="grid-container">
     <div class="container">
       <div id="left-rectangle" class="rectangle"></div>
@@ -643,7 +628,17 @@
     </div>
   </div>
 </div>
-<script>var leftRectangle = document.getElementById("left-rectangle");
+<footer>
+  <div class="footer-container">
+    <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
+      <h3>What Do You Think About Our Community Hub?</h3>
+    </div>
+    <div class="box" onclick="scrollToTop()">🚀</div>
+  </div>
+  <div class="footer-container">
+    <p>&copy; 2023 Lofties. All rights reserved.</p>
+  </div>
+</footer><script>var leftRectangle = document.getElementById("left-rectangle");
     var rightRectangle = document.getElementById("right-rectangle");
     var topTriangle = document.getElementById("top-triangle");
     var bottomTriangle = document.getElementById("bottom-triangle");

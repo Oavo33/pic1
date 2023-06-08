@@ -510,31 +510,30 @@
       You don't need to Sign Up! You are already a Member of Our Community. Save that time browsing what's on offer this week!
     </div>
   </div>
-  <h1 class="hub-title">Collabor8</h1><div class="social">
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
-        </a>
-      </div>
-      <div>
-        <a href="#">
-          <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
-        </a>
-      </div>
+  <h1 class="hub-title">Collabor8</h1>
+  <div class="social">
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/youtube.png" alt="YouTube">
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/facebook-new.png" alt="Facebook">
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/instagram-new.png" alt="Instagram">
+      </a>
+    </div>
+    <div>
+      <a href="#">
+        <img src="https://img.icons8.com/office/30/FF0000/twitter.png" alt="Twitter">
+      </a>
     </div>
   </div>
-</header>
-<div class="hub-card">
+</header><div class="hub-card">
   <h1>Welcome To The Future !</h1>
   <p>Hey folks, welcome to Collabor8! Think of us as your friendly neighborhood hub. Here, we bring together local businesses and the community, allowing both to grow and succeed.</p>
   <div class="dropdown-container">
@@ -547,52 +546,80 @@
         <option value="pilot">RocketShip Parts</option>
       </select>
     </div>
-  </div></div><div class="grid-wrapper">
-    <div class="grid-container">
-      <div class="container">
-        <div id="left-rectangle" class="rectangle"></div>
-        <div id="right-rectangle" class="rectangle"></div>
-        <div id="top-triangle" class="triangle"></div>
-        <div id="bottom-triangle" class="triangle"></div>
-        <div id="additional-triangle" class="triangle"></div>
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="left-rectangle" class="rectangle"></div>
+      <div id="right-rectangle" class="rectangle"></div>
+      <div id="top-triangle" class="triangle"></div>
+      <div id="bottom-triangle" class="triangle"></div>
+      <div id="additional-triangle" class="triangle"></div>
+      <span class="text">Jakes<br>Gardens</span>
+    </div>
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="center-pentagon" class="pentagon">
         <span class="text">Jakes<br>Gardens</span>
-      </div><div class="container">
-        <div id="center-pentagon" class="pentagon">
-          <span class="text">Jakes<br>Gardens</span>
-        </div>
-        <div id="left-pentagon" class="pentagon">
-          <span class="text">Rule</span>
-        </div>
-        <div id="right-pentagon" class="pentagon">
-          <span class="text">Now</span>
-        </div>
-      </div><div class="container">
-        <div id="center-hexagon" class="hexagon">
-          <span class="text">Jakes<br>Gardens</span>
-        </div>
-        <div id="left-hexagon" class="hexagon">
-          <span class="text">Rule</span>
-        </div>
-        <div id="right-hexagon" class="hexagon">
-          <span class="text">Now</span>
-        </div>
-      </div><div class="container">
-        <div id="center-square" class="square">
-          <span class="text">Jakes<br>Gardens</span>
-        </div>
-        <div id="left-square" class="square">
-          <span class="text">Jakes<br>Gardens</span>
-        </div>
-        <div id="right-square" class="square">
-          <span class="text">Jakes<br>Gardens</span>
-        </div>
-      </div><div class="container">
-        <div id="center-circle" class="circle"></div>
-        <div id="left-circle" class="circle"></div>
-        <div id="triangle"></div>
+      </div>
+      <div id="left-pentagon" class="pentagon">
+        <span class="text">Rule</span>
+      </div>
+      <div id="right-pentagon" class="pentagon">
+        <span class="text">Now</span>
       </div>
     </div>
   </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="center-hexagon" class="hexagon">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="left-hexagon" class="hexagon">
+        <span class="text">Rule</span>
+      </div>
+      <div id="right-hexagon" class="hexagon">
+        <span class="text">Now</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="center-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="left-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="right-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="center-circle" class="circle"></div>
+      <div id="left-circle" class="circle"></div>
+      <div id="triangle"></div>
+    </div>
+  </div>
+</div>
+
 <div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
@@ -628,6 +655,7 @@
     <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
   </div>
 </div>
+
 <footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
@@ -639,6 +667,7 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
+
 <script>var leftRectangle = document.getElementById("left-rectangle");
     var rightRectangle = document.getElementById("right-rectangle");
     var topTriangle = document.getElementById("top-triangle");

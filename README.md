@@ -590,7 +590,8 @@
       <div id="bottom-triangle" class="triangle"></div>
       <div id="additional-triangle" class="triangle"></div>
       <span class="text">Jakes<br>Gardens</span>
-    </div><div class="container">
+    </div>
+    <div class="container">
       <div id="center-pentagon" class="pentagon">
         <span class="text">Jakes<br>Gardens</span>
       </div>
@@ -600,7 +601,8 @@
       <div id="right-pentagon" class="pentagon">
         <span class="text">Now</span>
       </div>
-    </div><div class="container">
+    </div>
+    <div class="container">
       <div id="center-hexagon" class="hexagon">
         <span class="text">Jakes<br>Gardens</span>
       </div>
@@ -610,7 +612,8 @@
       <div id="right-hexagon" class="hexagon">
         <span class="text">Now</span>
       </div>
-    </div><div class="container">
+    </div>
+    <div class="container">
       <div id="center-square" class="square">
         <span class="text">Jakes<br>Gardens</span>
       </div>
@@ -628,6 +631,7 @@
     </div>
   </div>
 </div>
+
 <footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">

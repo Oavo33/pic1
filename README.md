@@ -1,3 +1,4 @@
+# new1
 <!DOCTYPE html>
 <html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -145,19 +146,22 @@
             text-decoration: none;
         }.grid-wrapper {
   overflow-x: auto;
+  background-color: white;
 }
 .grid-container {
   display: flex;
   flex-wrap: nowrap;
-  width: max-content; /* Adjust the width based on your content */
+  width: max-content;
   margin: 0 auto;
 }
 .container {
   position: relative;
-  width: 150px;
-  height: 200px;
-  margin: 20px;
+  width: 75px;
+  height: 100px;
+  margin: 5px;
   flex: 0 0 auto;
+  border: 1px solid black;
+  background-color: white;
 }
 .square {
   position: absolute;
@@ -370,113 +374,7 @@
   border-bottom: 10px solid white;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-}
-.community-container {
-      color: #00b3b3;
-      text-align: center;
-      position: relative;
-      margin-bottom: 100px;
-    }
-    .community-heading,
-    .community-description,
-    .community-benefits,
-    .community-cta,
-    .community-benefits-list {
-      color: #00b3b3;
-      text-align: center;
-    }
-    .community-heading {
-      font-size: 18px;
-      margin-top: 20px;
-    }
-    .community-description {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .community-benefits {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .community-benefits-list {
-      margin-top: 5px;
-      list-style-type: disc;
-      margin-left: 15px;
-      font-size: 17px;
-    }
-    .community-cta {
-      font-style: italic;
-      margin-top: 10px;
-      font-size: 17px;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 20px;
-      background: linear-gradient(to bottom, #00b3b3, #ffffff);
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      padding: 5px;
-      justify-items: center;
-    }
-    .grid-item {
-      background-color: #00b3b3;
-      color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-      width: 125px;
-    }
-    .grid-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 8px rgba(0, 0, 0, 0.3);
-    }
-    .grid-item .hover-text {
-      display: none;
-      font-size: 10px;
-    }
-    .grid-item:hover .hover-text {
-      display: block;
-    }
-    footer {
-    background: linear-gradient(to bottom, #ffffff, #00b3b3);
-    padding: 35px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-  }
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .footer-container .box {
-    background-color: #00b3b3;
-    color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    cursor: pointer;
-  }
-  .footer-container .box h3 {
-    margin: 0;
-  }
-  .footer-container .box:first-child {
-    border: 1px solid #ffffff;
-  }
-  .footer-container .box:last-child {
-    border: 1px solid #ffffff;
-  }
-    @media (max-width: 768px) {
+}@media (max-width: 768px) {
       header h1 {
         font-size: 30px;
       }
@@ -588,58 +486,7 @@
     <i class="community-icon">📝</i>
     <p class="community-text">White Paper</p>
     <p class="hover-text">Want to Know how Our Community will flourish BY local business? Please read: Section 6.4, That's how our Community gets paid! The more we interact with Local Business, The more we get Paid by Them, Pop in say Thanks</p>
-  </div>
-</div><div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="left-rectangle" class="rectangle"></div>
-      <div id="right-rectangle" class="rectangle"></div>
-      <div id="top-triangle" class="triangle"></div>
-      <div id="bottom-triangle" class="triangle"></div>
-      <div id="additional-triangle" class="triangle"></div>
-      <span class="text">Jakes<br>Gardens</span>
-    </div>
-    <div class="container">
-      <div id="center-pentagon" class="pentagon">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-pentagon" class="pentagon">
-        <span class="text">Rule</span>
-      </div>
-      <div id="right-pentagon" class="pentagon">
-        <span class="text">Now</span>
-      </div>
-    </div>
-    <div class="container">
-      <div id="center-hexagon" class="hexagon">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-hexagon" class="hexagon">
-        <span class="text">Rule</span>
-      </div>
-      <div id="right-hexagon" class="hexagon">
-        <span class="text">Now</span>
-      </div>
-    </div>
-    <div class="container">
-      <div id="center-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="right-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-    </div>
-    <div class="container">
-      <div id="center-circle" class="circle"></div>
-      <div id="left-circle" class="circle"></div>
-      <div id="triangle"></div>
-    </div>
-  </div>
-</div>
-
+  </div></div>
 <footer>
   <div class="footer-container">
     <div class="box" onclick="window.location.href = 'https://oavo33.github.io/GitHubz/';">
@@ -732,3 +579,4 @@ function scrollToTop() {
 }</script>
 </body>
 </html>
+

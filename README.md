@@ -547,80 +547,7 @@
       </select>
     </div>
   </div>
-</div>
-
-<div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="left-rectangle" class="rectangle"></div>
-      <div id="right-rectangle" class="rectangle"></div>
-      <div id="top-triangle" class="triangle"></div>
-      <div id="bottom-triangle" class="triangle"></div>
-      <div id="additional-triangle" class="triangle"></div>
-      <span class="text">Jakes<br>Gardens</span>
-    </div>
-  </div>
-</div>
-
-<div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="center-pentagon" class="pentagon">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-pentagon" class="pentagon">
-        <span class="text">Rule</span>
-      </div>
-      <div id="right-pentagon" class="pentagon">
-        <span class="text">Now</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="center-hexagon" class="hexagon">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-hexagon" class="hexagon">
-        <span class="text">Rule</span>
-      </div>
-      <div id="right-hexagon" class="hexagon">
-        <span class="text">Now</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="center-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="left-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-      <div id="right-square" class="square">
-        <span class="text">Jakes<br>Gardens</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-wrapper">
-  <div class="grid-container">
-    <div class="container">
-      <div id="center-circle" class="circle"></div>
-      <div id="left-circle" class="circle"></div>
-      <div id="triangle"></div>
-    </div>
-  </div>
-</div>
-
-<div class="grid-container">
+</div><div class="grid-container">
   <div class="grid-item community-item" onclick="window.location.href = 'https://oavo33.github.io/Elderly.assistance/';">
     <i class="community-icon">👵👴🏽</i>
     <p class="community-text">Elderly Assistance</p>
@@ -667,7 +594,55 @@
     <p>&copy; 2023 Lofties. All rights reserved.</p>
   </div>
 </footer>
+</div> <!-- Closing tag for the first section -->
 
+<div class="grid-wrapper">
+  <div class="grid-container">
+    <div class="container">
+      <div id="left-rectangle" class="rectangle"></div>
+      <div id="right-rectangle" class="rectangle"></div>
+      <div id="top-triangle" class="triangle"></div>
+      <div id="bottom-triangle" class="triangle"></div>
+      <div id="additional-triangle" class="triangle"></div>
+      <span class="text">Jakes<br>Gardens</span>
+    </div><div class="container">
+      <div id="center-pentagon" class="pentagon">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="left-pentagon" class="pentagon">
+        <span class="text">Rule</span>
+      </div>
+      <div id="right-pentagon" class="pentagon">
+        <span class="text">Now</span>
+      </div>
+    </div><div class="container">
+      <div id="center-hexagon" class="hexagon">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="left-hexagon" class="hexagon">
+        <span class="text">Rule</span>
+      </div>
+      <div id="right-hexagon" class="hexagon">
+        <span class="text">Now</span>
+      </div>
+    </div><div class="container">
+      <div id="center-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="left-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+      <div id="right-square" class="square">
+        <span class="text">Jakes<br>Gardens</span>
+      </div>
+    </div>
+    <div class="container">
+      <div id="center-circle" class="circle"></div>
+      <div id="left-circle" class="circle"></div>
+      <div id="triangle"></div>
+    </div>
+  </div>
+</div>
 <script>var leftRectangle = document.getElementById("left-rectangle");
     var rightRectangle = document.getElementById("right-rectangle");
     var topTriangle = document.getElementById("top-triangle");

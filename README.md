@@ -143,21 +143,19 @@
         .box a {
             color: white;
             text-decoration: none;
-        }.container {
+        }.grid-wrapper {
+      overflow-x: auto;
+    }.grid-container {
+      display: flex;
+      flex-wrap: nowrap;
+      width: max-content; /* Adjust the width based on your content */
+      margin: 0 auto;
+    }.container {
       position: relative;
       width: 150px;
       height: 200px;
       margin: 20px;
-    }
-    .grid-wrapper {
-      width: fit-content;
-      overflow-x: auto;
-      margin: 0 auto;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
+      flex: 0 0 auto;
     }
      .square {
       position: absolute;

@@ -83,7 +83,7 @@
       max-width: 210px;
       width: 45%;
       margin: 0 auto;
-      margin-top: -140px;
+      margin-top: -138px;
       position: relative;
       z-index: 2;
     }
